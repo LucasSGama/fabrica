@@ -1,6 +1,6 @@
 <?php
     // Incluir neste ponto o arquivo conecta.php
-    require_once "./conecta.php";
+    require_once "conecta.php";
 
     // _______________________________________________-
 
@@ -28,7 +28,7 @@
     // Obs void indica que a função não tem retorno "return"
 
     // Programar a função inserirFabricante neste ponto
-    function inserirFabricante(PDO $conexao, string $none):void {
+    function inserirFabricante(PDO $conexao, string $nome):void {
 
         // Insere no Banco de dados o valor digitado pelo usuário no formulário armazenado na variável $none
         // Obs Não é necessário criar para o ID que é automático
@@ -54,6 +54,7 @@
         try {
             $consulta = $conexao->prepare($sql);
             $consulta->bindParam(':id', $id, PDO::PARAM_INT);
+            $consulta->execute();
             // Aqui usado fetch porque é apenas 1 fabricante
             $resultado = $consulta->fetch(PDO::FETCH_ASSOC);
 

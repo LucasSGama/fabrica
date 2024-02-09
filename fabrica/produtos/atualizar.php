@@ -62,12 +62,12 @@
                 <input value="<?=$produto['quantidade']?>" type="number" name="quantidade" id="quantidade" min="0" max="100" required>
             </p>
             <p>
-                <label for="Fabricante">Fabricantes:</label>
+                <label for="fabricante">Fabricantes:</label>
                 <select name="fabricante" id="fabricante">
                     
                     <option value=""></option>
 
-                    <?php foreach($listaDeFabricantes as $fabricante) {?>
+                    <?php foreach($listaDeFabricantes as $fabricante) { ?>
 
                         <!-- Se a chave estrangeira for idêntica à chave primária
                         (ou seja, se o código do fabricante do produto bater com o código do fabricante),
@@ -87,7 +87,7 @@
                 <label for="descricao">descição:</label><br>
                 <textarea required name="descricao" id="descricao" cols="30" rows="3"><?=$produto['descricao']?></textarea>
             </p>
-            <button type="submit" name="inserir">Inserir produto</button>
+            <button type="submit" name="atualizar">Atualizar produto</button>
 
         </form>
     </div>

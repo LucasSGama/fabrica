@@ -50,7 +50,7 @@
                 <input type="number" name="quantidade" id="quantidade" min="0" max="100" required>
             </p>
             <p>
-                <label for="Fabricante">Fabricantes:</label>
+                <label for="fabricante">Fabricantes:</label>
                 <select name="fabricante" id="fabricante">
                     
                     <option value=""></option>

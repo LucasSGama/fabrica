@@ -20,11 +20,11 @@
         <hr>
         <h2>Lendo e carregando todos os produtos</h2>
 
-        <p><a href="./inserir.php" style="color: blue;">Inserir um novo produto</a></p>
+        <p><a href="inserir.php" style="color: blue;">Inserir um novo produto</a></p>
         <hr>
         <div class="produtos">
             <!-- Laço para exibir os produtos cadastrados disponíveis -->
-            <?php foreach($listaDeProdutos as $produto) {?>
+            <?php foreach($listaDeProdutos as $produto) { ?>
 
                 <article>
                     <!-- __________________________________________________________________________ -->
@@ -32,14 +32,14 @@
                     <!-- h3<?=$produto['nome']?> </h3> -->
                     <!-- _____________________________________________________ -->
 
-                    <!-- Quando com o somente o id do fabricante (ATUAL) -->
-                    <h3><?=$produto['nome']?> </h3>
+                    <!-- QUando traz o nome do fabricante (ATUAL) -->
+                    <h3><?=$produto['produto']?> </h3>
 
                     <!-- Formatação direto no código (ANTIGO) -->
                     <!-- <p><b>Preço: </b> R$ <?=number_format($produto['preco'], 2, ',', '.')?></p> -->
 
                     <!-- Formatação via função criada "formataMoeda" (ATUAL) -->
-                    <p><b>Preço: </b> <?formataMoeda($produto['preco'])?></p>
+                    <p><b>Preço: </b> <?=formataMoeda($produto['preco'])?></p>
 
                     <p><b>Quantidade: </b><?=$produto['quantidade']?></p>
                     <p><b>Descrição: </b><?=$produto['descricao']?></p>

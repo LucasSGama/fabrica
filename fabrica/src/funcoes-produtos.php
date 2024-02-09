@@ -1,6 +1,6 @@
 <?php
     // Incluir neste ponto o arquivo conecta.php
-    require_once "./conecta.php";
+    require_once "conecta.php";
 
     // ___________________________________
 
@@ -83,7 +83,7 @@
 
     // Programar a função atualizarProduto neste ponto
     function atualizarProduto (PDO $conexao, int $id, string $nome, float $preco, int $quantidade, string $descricao, int $fabricanteId) {
-        $sql = "UPDATE produtos SET nome = :nome, preco = :preco, quantidade = :quantidade, descricao = :descricao, frabicante_id = :fabricante_id WHERE id = :id";
+        $sql = "UPDATE produtos SET nome = :nome, preco = :preco, quantidade = :quantidade, descricao = :descricao, fabricante_id = :fabricante_id WHERE id = :id";
 
         try {
             $consulta = $conexao->prepare($sql);
@@ -121,9 +121,9 @@
 
     // FUnções utilitárias dump e formataMoeda
     function dump($dados){
-        echo "<prev>";
+        echo "<pre>";
         var_dump($dados);
-        echo "<prev>";
+        echo "<pre>";
     }
 
     function formataMoeda(float $valor):string {
