@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Produtos | SELECT <a href="../index.php"></a></h1>
+        <h1>Produtos | SELECT <a href="../index.html">Voltar</a></h1>
         <hr>
         <h2>Lendo e carregando todos os produtos</h2>
 

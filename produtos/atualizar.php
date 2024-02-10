@@ -65,8 +65,6 @@
                 <label for="fabricante">Fabricantes:</label>
                 <select name="fabricante" id="fabricante">
                     
-                    <option value=""></option>
-
                     <?php foreach($listaDeFabricantes as $fabricante) { ?>
 
                         <!-- Se a chave estrangeira for idêntica à chave primária

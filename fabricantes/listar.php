@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Fabricantes | SELECT</h1>
+        <h1>Fabricantes | SELECT <a href="../index.html">Voltar</a></h1>
         <hr>
         <h2>Lendo e carregando todos os fabricantes</h2>
 
